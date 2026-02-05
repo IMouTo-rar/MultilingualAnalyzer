@@ -21,7 +21,7 @@ public class Test {
     }
 
     public static void main(String[] args) throws IOException {
-        String text = "My name is McGill. C 'est' le via.";
+        String text = "北京科技大学AI实验室";
 
         try (Analyzer ik = new MLAnalyzer()) {
             TokenStream ts = ik.tokenStream("content", text);
@@ -29,6 +29,8 @@ public class Test {
             doToken(ts);
         }
     }
+
+
 
 
 }
