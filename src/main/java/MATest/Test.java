@@ -21,7 +21,7 @@ public class Test {
     }
 
     public static void main(String[] args) throws IOException {
-        String text = "北京科技大学AI实验室";
+        String text = "北京科 技大学AI实验室";
 
         try (Analyzer ik = new MLAnalyzer()) {
             TokenStream ts = ik.tokenStream("content", text);

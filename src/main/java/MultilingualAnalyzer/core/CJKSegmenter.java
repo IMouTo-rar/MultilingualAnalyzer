@@ -40,7 +40,7 @@ class CJKSegmenter implements ISegmenter {
 	//子分词器标签
 	static final String SEGMENTER_NAME = "CJK_SEGMENTER";
 	//待处理的分词hit队列
-	private List<Hit> tmpHits;
+	private final List<Hit> tmpHits;
 	
 	
 	CJKSegmenter(){
@@ -56,7 +56,7 @@ class CJKSegmenter implements ISegmenter {
 			//优先处理tmpHits中的hit
 			if(!this.tmpHits.isEmpty()){
 				//处理词段队列
-				Hit[] tmpArray = this.tmpHits.toArray(new Hit[this.tmpHits.size()]);
+				Hit[] tmpArray = this.tmpHits.toArray(new Hit[0]);
 				for(Hit hit : tmpArray){
 					hit = Dictionary.getSingleton().matchWithHit(context.getSegmentBuff(), context.getCursor() , hit);
 					if(hit.isMatch()){
@@ -107,7 +107,7 @@ class CJKSegmenter implements ISegmenter {
 		}
 		
 		//判断是否锁定缓冲区
-		if(this.tmpHits.size() == 0){
+		if(this.tmpHits.isEmpty()){
 			context.unlockBuffer(SEGMENTER_NAME);
 			
 		}else{
