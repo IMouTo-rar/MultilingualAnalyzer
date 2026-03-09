@@ -278,16 +278,43 @@ class AnalyzeContext {
 						}
 					}
 				}
-			}else{//pathMap中找不到index对应的LexemePath
-				//单字输出
-				this.outputSingleCJK(index);
-				index++;
+			}else{//pathMap中找不到index对应的LexemePath，未匹配部分按2-gram分词
+				index = this.output2GramCJK(index);
 			}
 		}
 		//清空当前的Map
 		this.pathMap.clear();
 	}
 	
+	/**
+	 * 判断指定位置是否为CJK字符（中文或日韩文）
+	 */
+	private boolean isCJK(int index) {
+		if (index < 0 || index >= this.charTypes.length) return false;
+		int t = this.charTypes[index];
+		return t == CharacterUtil.CHAR_CHINESE || t == CharacterUtil.CHAR_OTHER_CJK;
+	}
+
+	/**
+	 * 未匹配词表部分按 1-2 gram
+	 */
+	private int output2GramCJK(int startIndex) {
+		int end = startIndex;
+		while (end + 1 <= this.cursor && this.pathMap.get(end + 1) == null && isCJK(end + 1)) {
+			end++;
+		}
+		int runLen = end - startIndex + 1;
+		if (runLen == 1) {
+			this.outputSingleCJK(startIndex);
+		} else {
+			for (int i = 0; i < runLen - 1; i++) {
+				Lexeme bigram = new Lexeme(this.buffOffset, startIndex + i, 2, Lexeme.TYPE_CNWORD);
+				this.results.add(bigram);
+			}
+		}
+		return end + 1;
+	}
+
 	/**
 	 * 对CJK字符进行单字输出
 	 * @param index
