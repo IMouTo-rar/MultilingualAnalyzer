@@ -33,9 +33,8 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.util.Version;
-import MultilingualAnalyzer.core.IKSegmenter;
-import MultilingualAnalyzer.core.Lexeme;
+import MultilingualAnalyzer.ik.core.IKSegmenter;
+import MultilingualAnalyzer.ik.core.Lexeme;
 
 /**
  * Single Word Multi Char Query Builder

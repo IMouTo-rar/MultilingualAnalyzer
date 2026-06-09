@@ -21,16 +21,16 @@
  * 版权声明 2012，乌龙茶工作室
  * provided by Linliangyi and copyright 2012 by Oolong studio
  */
-package MultilingualAnalyzer.core;
+package MultilingualAnalyzer.ik.core;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-import MultilingualAnalyzer.cfg.Configuration;
-import MultilingualAnalyzer.cfg.DefaultConfig;
-import MultilingualAnalyzer.dic.Dictionary;
+import MultilingualAnalyzer.ik.cfg.Configuration;
+import MultilingualAnalyzer.ik.cfg.DefaultConfig;
+import MultilingualAnalyzer.ik.dic.Dictionary;
 
 /**
  * IK分词器主类

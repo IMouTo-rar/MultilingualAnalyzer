@@ -23,7 +23,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.dic;
+package MultilingualAnalyzer.ik.dic;
 
 import java.util.Arrays;
 import java.util.HashMap;

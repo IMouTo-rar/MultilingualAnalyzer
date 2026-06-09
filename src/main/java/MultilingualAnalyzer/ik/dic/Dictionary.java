@@ -23,7 +23,7 @@
  *
  *
  */
-package MultilingualAnalyzer.dic;
+package MultilingualAnalyzer.ik.dic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,7 +33,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.List;
 
-import MultilingualAnalyzer.cfg.Configuration;
+import MultilingualAnalyzer.ik.cfg.Configuration;
 
 /**
  * 词典管理类,单子模式

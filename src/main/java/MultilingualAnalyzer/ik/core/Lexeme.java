@@ -22,7 +22,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.core;
+package MultilingualAnalyzer.ik.core;
 
 /**
  * IK词元对象 

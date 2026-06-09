@@ -23,7 +23,7 @@
  * 
  * 
  */
-package MultilingualAnalyzer.cfg;
+package MultilingualAnalyzer.ik.cfg;
 
 import java.io.IOException;
 import java.io.InputStream;

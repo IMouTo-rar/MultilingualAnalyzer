@@ -11,8 +11,8 @@ import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
-import MultilingualAnalyzer.core.IKSegmenter;
-import MultilingualAnalyzer.core.Lexeme;
+import MultilingualAnalyzer.ik.core.IKSegmenter;
+import MultilingualAnalyzer.ik.core.Lexeme;
 
 /**
  * IK分词器 Lucene Tokenizer适配器类
