@@ -1,0 +1,13 @@
+MultilingualAnalyzer
+Copyright 2024-2026 yangbinyu
+
+This product includes software originally developed as part of
+IK Analyzer (https://code.google.com/archive/p/ik-analyzer/),
+Copyright (c) 林良益 (linliangyi2005@gmail.com),
+licensed under the Apache License, Version 2.0.
+
+Modifications include, but are not limited to:
+  - Migration to Java 17
+  - Compatibility updates for Apache Lucene 9.10
+  - Package restructuring
+  - Multilingual tokenization support
