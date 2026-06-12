@@ -36,3 +36,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+# 本地样例项目，不入库
+/examples/

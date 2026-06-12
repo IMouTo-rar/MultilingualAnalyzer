@@ -23,13 +23,13 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.ik.core;
+package MultilingualAnalyzer.core;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import MultilingualAnalyzer.ik.dic.Dictionary;
-import MultilingualAnalyzer.ik.dic.Hit;
+import MultilingualAnalyzer.dic.Dictionary;
+import MultilingualAnalyzer.dic.Hit;
 
 
 /**

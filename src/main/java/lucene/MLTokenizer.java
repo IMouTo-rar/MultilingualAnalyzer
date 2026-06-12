@@ -3,7 +3,7 @@
  * https://code.google.com/archive/p/ik-analyzer/
  * 兼容 Java 17 | Lucene 9.x
  */
-package MultilingualAnalyzer.lucene;
+package lucene;
 
 import java.io.IOException;
 
@@ -11,8 +11,8 @@ import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
-import MultilingualAnalyzer.ik.core.IKSegmenter;
-import MultilingualAnalyzer.ik.core.Lexeme;
+import MultilingualAnalyzer.core.IKSegmenter;
+import MultilingualAnalyzer.core.Lexeme;
 
 /**
  * IK分词器 Lucene Tokenizer适配器类

@@ -22,7 +22,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.query;
+package query;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

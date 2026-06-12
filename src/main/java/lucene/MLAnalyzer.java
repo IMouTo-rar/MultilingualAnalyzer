@@ -3,7 +3,7 @@
  * https://code.google.com/archive/p/ik-analyzer/
  * 兼容 Java 17 | Lucene 9.x
  */
-package MultilingualAnalyzer.lucene;
+package lucene;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.Tokenizer;

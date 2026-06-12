@@ -22,7 +22,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.ik.cfg;
+package MultilingualAnalyzer.cfg;
 
 import java.util.List;
 

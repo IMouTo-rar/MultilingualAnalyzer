@@ -22,7 +22,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.ik.core;
+package MultilingualAnalyzer.core;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -32,8 +32,8 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
-import MultilingualAnalyzer.ik.cfg.Configuration;
-import MultilingualAnalyzer.ik.dic.Dictionary;
+import MultilingualAnalyzer.cfg.Configuration;
+import MultilingualAnalyzer.dic.Dictionary;
 
 /**
  * 

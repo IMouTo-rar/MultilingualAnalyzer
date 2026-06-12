@@ -23,7 +23,7 @@
  * 
  * 字符集识别工具类
  */
-package MultilingualAnalyzer.ik.core;
+package MultilingualAnalyzer.core;
 
 /**
  *

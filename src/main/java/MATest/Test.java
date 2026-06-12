@@ -1,6 +1,6 @@
 package MATest;
 
-import MultilingualAnalyzer.lucene.MLAnalyzer;
+import lucene.MLAnalyzer;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;

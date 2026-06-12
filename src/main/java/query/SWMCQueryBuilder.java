@@ -22,7 +22,7 @@
  * provided by Linliangyi and copyright 2012 by Oolong studio
  * 
  */
-package MultilingualAnalyzer.query;
+package query;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -33,8 +33,8 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.Query;
-import MultilingualAnalyzer.ik.core.IKSegmenter;
-import MultilingualAnalyzer.ik.core.Lexeme;
+import MultilingualAnalyzer.core.IKSegmenter;
+import MultilingualAnalyzer.core.Lexeme;
 
 /**
  * Single Word Multi Char Query Builder
