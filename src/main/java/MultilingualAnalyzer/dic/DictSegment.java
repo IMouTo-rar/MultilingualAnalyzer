@@ -318,6 +318,13 @@ class DictSegment implements Comparable<DictSegment>{
 	}
 
 	/**
+	 * 清除公用字典字符缓存
+	 */
+	static void clearCharMap() {
+		charMap.clear();
+	}
+
+	/**
 	 * 实现Comparable接口
 	 * @param o
 	 * @return int
@@ -326,5 +333,5 @@ class DictSegment implements Comparable<DictSegment>{
 		//对当前节点存储的char进行比较
 		return this.nodeChar.compareTo(o.nodeChar);
 	}
-	
+
 }

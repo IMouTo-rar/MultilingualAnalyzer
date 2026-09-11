@@ -104,6 +104,38 @@ public class Dictionary {
     }
 
     /**
+     * 销毁词典单例，释放所有词典树内存及字符缓存。
+     * 调用后需重新调用 {@link #initial(Configuration)} 才能继续使用。
+     */
+    public static synchronized void destroy() {
+        if (singleton != null) {
+            singleton._MainDict = null;
+            singleton._StopWordDict = null;
+            singleton._QuantifierDict = null;
+            singleton = null;
+        }
+        DictSegment.clearCharMap();
+    }
+
+    /**
+     * 重置词典：销毁当前实例后使用新配置重新加载。
+     * @param cfg 新的配置对象
+     * @return Dictionary 新的单例对象
+     */
+    public static synchronized Dictionary reset(Configuration cfg) {
+        destroy();
+        return initial(cfg);
+    }
+
+    /**
+     * 词典是否已初始化
+     * @return true 表示词典已加载可用
+     */
+    public static boolean isInitialized() {
+        return singleton != null;
+    }
+
+    /**
      * 批量加载新词条
      * @param words Collection<String>词条列表
      */
